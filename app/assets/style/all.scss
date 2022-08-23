@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.p-20-30 {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.p-24-32 {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.p-24-33 {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+}
+
+.p-24-36 {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.p-64-84 {
+  font-style: italic;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 84px;
+}
+
+.p-80-106 {
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 106px;
+}
+
+.pd-32 {
+  padding: 32px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.header {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week2/banner.png?raw=true);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 308px 0;
+  flex-direction: column;
+  color: white;
+  box-shadow: 0 10px 12px #80807757;
+
+  section {
+    h1 {
+      padding-bottom: 32px;
+      span {
+        display: block;
+      }
+    }
+    h2 {
+      padding-bottom: 40px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+      }
+      li:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+main {
+  section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 56px 0;
+    h2 {
+      padding-bottom: 40px;
+    }
+    ul.normal {
+      padding: 20px 0;
+      border-bottom: 1px solid black;
+      li {
+        list-style: none;
+        padding-bottom: 4px;
+      }
+      li:nth-child(2) {
+        padding-bottom: 8px;
+      }
+      li:last-child {
+        line-height: 36px;
+        padding-bottom: 3px;
+      }
+    }
+    ul.red-style {
+      padding-top: 28px;
+      li {
+        list-style: none;
+        padding-bottom: 28px;
+      }
+      li:before {
+        content: "";
+        display: inline-block;
+        background-color: #891818;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+      li:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  section.brand {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 126px;
+    border: 1px solid #707070;
+    h2 {
+      padding-bottom: 12px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px 24px;
+      padding: 34px 0;
+      li {
+        list-style: none;
+      }
+    }
+  }
+  section.work {
+    text-align: center;
+    padding-bottom: 144px;
+    div {
+      padding: 56px 0;
+      h2 {
+        padding-bottom: 16px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px 24px;
+      li {
+        list-style: none;
+        p {
+          font-style: italic;
+          font-weight: 500;
+          padding-top: 16px;
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  ul {
+    li {
+      padding-bottom: 16px;
+      list-style: none;
+    }
+    li:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+footer {
+  padding: 64px 0;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
